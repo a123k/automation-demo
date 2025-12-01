@@ -52,49 +52,6 @@ npx playwright install
 
 ---
 
-## Project Structure
-
-```
-playwright-ts-project/
-## Project Structure
-
-```
-PLAYWRIGHT/
-│
-├─ env/                   # Environment files
-│   ├─ .env.prod
-│   └─ .env.staging
-│
-├─ node_modules/           # Node.js dependencies
-│
-├─ reports/                # Cucumber and test reports
-│   └─ cucumber.json
-│
-├─ src/                    # Source code
-│   ├─ hooks/              # Hooks and custom world for Cucumber
-│   │   ├─ hooks.ts
-│   │   └─ world.ts
-│   │
-│   ├─ pages/              # Page Object Model classes
-│   │   ├─ LoginPage.ts
-│   │   └─ ProductPage.ts
-│   │
-│   └─ test/               # Test files (step definitions or specs)
-│
-├─ test-results/           # Test execution results
-│
-├─ .gitignore
-├─ cucumber.json           # Cucumber configuration
-├─ package-lock.json
-├─ package.json
-├─ README.md
-└─ tsconfig.json           # TypeScript configuration
-```
-
-```
-
----
-
 ## Running Tests
 
 ### Run all tests

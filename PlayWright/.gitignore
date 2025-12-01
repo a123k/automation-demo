@@ -1,0 +1,9 @@
+# Playwright artifacts
+node_modules/
+test-results/
+videos/
+traces/
+*.zip
+*.html
+cucumber-report.json
+
