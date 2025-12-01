@@ -1,0 +1,2111 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "filter;tc-7-verify-the-filtering-of-product-in-alphabetical-order.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "TC-7 Verify the filtering of product in alphabetical order.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 758042741
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63353049
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 96737842
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I click on the filter icon and select the option \"Name (A to Z)\"",
+            "match": {
+              "location": "src/test/steps/product.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9546171
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I verify that the productnames are sorted alphabetically in \"ascending\" order",
+            "match": {
+              "location": "src/test/steps/product.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18082136
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I click on the filter icon and select the option \"Name (Z to A)\"",
+            "match": {
+              "location": "src/test/steps/product.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8703642
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I verify that the productnames are sorted alphabetically in \"descending\" order",
+            "match": {
+              "location": "src/test/steps/product.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4558701
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 59905041
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-7",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "filter;tc-8-verify-the-filtering-of-product-in-price-order.",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "TC-8 Verify the filtering of product in price order.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 582192578
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52762449
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 75839896
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click on the filter icon and select the option \"Price (low to high)\"",
+            "match": {
+              "location": "src/test/steps/product.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7113865
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I verify that the product prices are sorted in \"ascending\" order",
+            "match": {
+              "location": "src/test/steps/product.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17759442
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I click on the filter icon and select the option \"Price (high to low)\"",
+            "match": {
+              "location": "src/test/steps/product.ts:7"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7033436
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I verify that the product prices are sorted in \"descending\" order",
+            "match": {
+              "location": "src/test/steps/product.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3188197
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55724949
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-8",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "filter",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Filter",
+    "tags": [],
+    "uri": "src/test/features/filter.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "user-login;tc-1-verify-the-login-with-valid-credentials.",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "TC-1 Verify the login with valid credentials.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 524675017
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50543345
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I provided username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19548609
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I click on login button",
+            "match": {
+              "location": "src/test/steps/login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40591681
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I verify login is successful",
+            "match": {
+              "location": "src/test/steps/login.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2294294
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 51663686
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-1",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;tc-1-verify-the-login-with-valid-credentials.",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "TC-1 Verify the login with valid credentials.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 483355300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 49131334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I provided username \"problem_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17100201
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I click on login button",
+            "match": {
+              "location": "src/test/steps/login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43334474
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I verify login is successful",
+            "match": {
+              "location": "src/test/steps/login.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4047476
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 52987478
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-1",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;tc-1-verify-the-login-with-valid-credentials.",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "TC-1 Verify the login with valid credentials.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 475683069
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45821144
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I provided username \"error_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12578636
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I click on login button",
+            "match": {
+              "location": "src/test/steps/login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 41663247
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I verify login is successful",
+            "match": {
+              "location": "src/test/steps/login.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2447255
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55268190
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-1",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;tc-1-verify-the-login-with-valid-credentials.",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "TC-1 Verify the login with valid credentials.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 466858637
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53748096
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I provided username \"visual_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16438215
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "I click on login button",
+            "match": {
+              "location": "src/test/steps/login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55542089
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I verify login is successful",
+            "match": {
+              "location": "src/test/steps/login.ts:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1690298
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 55561376
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-1",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;tc-2-verify-that-locked-user-is-restricted-from-login.",
+        "keyword": "Scenario",
+        "line": 18,
+        "name": "TC-2 Verify that locked user is restricted from login.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 474243923
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 19,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48879682
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "I provided username \"locked_out_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14945266
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "I click on login button",
+            "match": {
+              "location": "src/test/steps/login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52629930
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "I verify login is not successful",
+            "match": {
+              "location": "src/test/steps/login.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2112627
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I verify that error message \"Epic sadface: Sorry, this user has been locked out.\" is displayed to show the login failure",
+            "match": {
+              "location": "src/test/steps/login.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5599803
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56080217
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-2",
+            "line": 17
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "user-login;tc-3-verify-that-invalid-user-is-restricted-from-login.",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "TC-3 Verify that invalid user is restricted from login.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 476065573
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45492447
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 29,
+            "name": "I provided username \"test\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17369710
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "I click on login button",
+            "match": {
+              "location": "src/test/steps/login.ts:15"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43900961
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I verify login is not successful",
+            "match": {
+              "location": "src/test/steps/login.ts:25"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2490256
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I verify that error message \"Epic sadface: Username and password do not match any user in this service\" is displayed to show the login failure",
+            "match": {
+              "location": "src/test/steps/login.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5515844
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 54054337
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-3",
+            "line": 26
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "user-login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "User login",
+    "tags": [],
+    "uri": "src/test/features/login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-purchase;tc-9-verify-that-no-of-items-in-cart-is-updated-when-adding-or-removing-product-from-product-page.",
+        "keyword": "Scenario",
+        "line": 4,
+        "name": "TC-9 Verify that no of items in cart is updated when adding or removing product from product page.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 475692587
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50529829
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 6,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62827188
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I added three products to the cart",
+            "match": {
+              "location": "src/test/steps/product.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 107594941
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I verify that items in cart is \"3\"",
+            "match": {
+              "location": "src/test/steps/cart.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2292570
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I removed two products from the cart",
+            "match": {
+              "location": "src/test/steps/product.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64053986
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I verify that items in cart is \"1\"",
+            "match": {
+              "location": "src/test/steps/cart.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2908099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 63440755
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-9",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-purchase;tc-10-verify-that-no-of-items-in-cart-is-updated-when-adding-or-removing-product-from-cart-page.",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "TC-10 Verify that no of items in cart is updated when adding or removing product from cart page.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 474095247
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43090845
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 15,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 65184914
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I added three products to the cart",
+            "match": {
+              "location": "src/test/steps/product.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 122223903
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I verify that items in cart is \"3\"",
+            "match": {
+              "location": "src/test/steps/cart.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1917164
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I click on the cart icon",
+            "match": {
+              "location": "src/test/steps/cart.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43075186
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "I removed two products from the cart",
+            "match": {
+              "location": "src/test/steps/product.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 63028635
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 20,
+            "name": "I verify that items in cart is \"1\"",
+            "match": {
+              "location": "src/test/steps/cart.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2123631
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 54887285
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-10",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-purchase;tc-12-verify-that-no-of-items-in-cart-is-correct-through-the-checkout-process.",
+        "keyword": "Scenario",
+        "line": 23,
+        "name": "TC-12 Verify that no of items in cart is correct through the checkout process.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 524833146
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 24,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 55397708
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 62782123
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I added three products to the cart",
+            "match": {
+              "location": "src/test/steps/product.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 105032677
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I verify that items in cart is \"3\"",
+            "match": {
+              "location": "src/test/steps/cart.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2264764
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I click on the cart icon",
+            "match": {
+              "location": "src/test/steps/cart.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46113671
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I verify that items in cart is \"3\"",
+            "match": {
+              "location": "src/test/steps/cart.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2235515
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44336344
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I verify that items in cart is \"3\"",
+            "match": {
+              "location": "src/test/steps/cart.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1972466
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I entered checkout details",
+            "match": {
+              "location": "src/test/steps/cart.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 19151793
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I continued checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34495749
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I verify that items in cart is \"3\"",
+            "match": {
+              "location": "src/test/steps/cart.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2027375
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I completed checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44552633
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I verify that cart is empty",
+            "match": {
+              "location": "src/test/steps/cart.ts:38"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2377218
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 56040460
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-12",
+            "line": 22
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-purchase;tc-13-verify-that-correct-products-are-added-to-the-cart",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "TC-13 Verify that correct products are added to the cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 602411951
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 40,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 64386526
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 41,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 79144527
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "I added three products to the cart",
+            "match": {
+              "location": "src/test/steps/product.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 103555029
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "I verify that items in cart is \"3\"",
+            "match": {
+              "location": "src/test/steps/cart.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3980315
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "I click on the cart icon",
+            "match": {
+              "location": "src/test/steps/cart.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48467703
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "I verify that correct products added to the cart",
+            "match": {
+              "location": "src/test/steps/cart.ts:43"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30229338
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 58564599
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-13",
+            "line": 38
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-purchase;tc-14-verify-the-cancellation-of-checkout-from-your-information-page-and-overview-page",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "TC-14 Verify the cancellation of checkout from Your information page and overview page",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 519502830
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 49,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70948871
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 50,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 76122169
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "I added three products to the cart",
+            "match": {
+              "location": "src/test/steps/product.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 148562561
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 52,
+            "name": "I click on the cart icon",
+            "match": {
+              "location": "src/test/steps/cart.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35311878
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30645856
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 54,
+            "name": "I entered checkout details",
+            "match": {
+              "location": "src/test/steps/cart.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 38877932
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 55,
+            "name": "I cancel the checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59494684
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 56,
+            "name": "I verify that page is redirected to your cart page",
+            "match": {
+              "location": "src/test/steps/cart.ts:55"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2265564
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 57,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43953789
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 58,
+            "name": "I entered checkout details",
+            "match": {
+              "location": "src/test/steps/cart.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 34047377
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 59,
+            "name": "I continued checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51557920
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 60,
+            "name": "I cancel the checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:49"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 52458242
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 61,
+            "name": "I verify that page is redirected to product page",
+            "match": {
+              "location": "src/test/steps/product.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 5156649
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 65395930
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-14",
+            "line": 47
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-purchase;tc-15-verify-that-the-price-calculated-at-the-checkout-is-the-sum-of-the-product-prices-added-to-the-cart",
+        "keyword": "Scenario",
+        "line": 64,
+        "name": "TC-15 Verify that the price calculated at the checkout is the sum of the product prices added to the cart",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 599454676
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 65,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58755176
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 66,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 66803546
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 67,
+            "name": "I added three products to the cart",
+            "match": {
+              "location": "src/test/steps/product.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 110210825
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 68,
+            "name": "I click on the cart icon",
+            "match": {
+              "location": "src/test/steps/cart.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 53404561
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 69,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44589133
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 70,
+            "name": "I entered checkout details",
+            "match": {
+              "location": "src/test/steps/cart.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 35490476
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 71,
+            "name": "I continued checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 54201439
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 72,
+            "name": "I verify that the item total is the sum of the products prices added to the cart",
+            "match": {
+              "location": "src/test/steps/cart.ts:61"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 29253606
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 61475288
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-15",
+            "line": 63
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-purchase",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Product Purchase",
+    "tags": [],
+    "uri": "src/test/features/product_purchase.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "sidebar;tc-4-verify-the-sidebar-option-avaialable-under-the-burger-menu.",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "TC-4 Verify the sidebar option avaialable under the burger menu.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 566572836
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 59881739
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70194552
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I click on the burger menu on the top left corner",
+            "match": {
+              "location": "src/test/steps/menu.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31033231
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
+            "name": "I verify the functionality of All Items, About, Logout and Reset App state",
+            "match": {
+              "location": "src/test/steps/menu.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3102928321
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 58520882
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-4",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sidebar;tc-5-verify-that-side-bar-is-closed-when-clicking-on-the-cross-icon-to-close-the-burger-menu.",
+        "keyword": "Scenario",
+        "line": 13,
+        "name": "TC-5 Verify that side bar is closed when clicking on the cross icon to close the burger menu.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 576286924
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 14,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 56640622
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 70559338
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I click on the burger menu on the top left corner",
+            "match": {
+              "location": "src/test/steps/menu.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 30876735
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 17,
+            "name": "I click on the cross icon to close the burger menu",
+            "match": {
+              "location": "src/test/steps/menu.ts:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 903520937
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 18,
+            "name": "I verify that All Items, About, Logout and Reset App state is not listed",
+            "match": {
+              "location": "src/test/steps/menu.ts:37"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 877461342
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 65473250
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-5",
+            "line": 12
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "sidebar;tc-11-verify-that-side-bar-is-avaibale-from-all-pages.",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "TC-11 Verify that side bar is avaibale from all pages.",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 566961847
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I launch the portal",
+            "match": {
+              "location": "src/test/steps/login.ts:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 51144155
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I logged into the portal successfully with username \"standard_user\" and password \"secret_sauce\"",
+            "match": {
+              "location": "src/test/steps/login.ts:35"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74236134
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click on the burger menu on the top left corner",
+            "match": {
+              "location": "src/test/steps/menu.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28020796
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 25,
+            "name": "I verify that All Items, About, Logout and Reset App state is listed",
+            "match": {
+              "location": "src/test/steps/menu.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16377054
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 26,
+            "name": "I click on the cart icon",
+            "match": {
+              "location": "src/test/steps/cart.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 48625323
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 27,
+            "name": "I click on the burger menu on the top left corner",
+            "match": {
+              "location": "src/test/steps/menu.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 40101646
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 28,
+            "name": "I verify that All Items, About, Logout and Reset App state is listed",
+            "match": {
+              "location": "src/test/steps/menu.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 13050035
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 29,
+            "name": "I proceed to checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 44535139
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 30,
+            "name": "I click on the burger menu on the top left corner",
+            "match": {
+              "location": "src/test/steps/menu.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 46151877
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I verify that All Items, About, Logout and Reset App state is listed",
+            "match": {
+              "location": "src/test/steps/menu.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18607335
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I entered checkout details",
+            "match": {
+              "location": "src/test/steps/cart.ts:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 25133184
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I continued checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 45162757
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 34,
+            "name": "I click on the burger menu on the top left corner",
+            "match": {
+              "location": "src/test/steps/menu.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 58530518
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 35,
+            "name": "I verify that All Items, About, Logout and Reset App state is listed",
+            "match": {
+              "location": "src/test/steps/menu.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 17520187
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 36,
+            "name": "I completed checkout",
+            "match": {
+              "location": "src/test/steps/cart.ts:33"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 50631417
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 37,
+            "name": "I click on the burger menu on the top left corner",
+            "match": {
+              "location": "src/test/steps/menu.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 43545168
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 38,
+            "name": "I verify that All Items, About, Logout and Reset App state is listed",
+            "match": {
+              "location": "src/test/steps/menu.ts:42"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18767402
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 63436041
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC-11",
+            "line": 20
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "sidebar",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Sidebar",
+    "tags": [],
+    "uri": "src/test/features/sidebar.feature"
+  }
+]
