@@ -3,6 +3,8 @@ node_modules/
 test-results/
 videos/
 traces/
+allure-report/
+allure-results/
 *.zip
 *.html
 cucumber-report.json
