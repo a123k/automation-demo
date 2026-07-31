@@ -4,20 +4,6 @@ This project is a **Playwright test automation framework** built with **TypeScri
 
 ---
 
-## Table of Contents
-
-* [Prerequisites](#prerequisites)
-* [Installation](#installation)
-* [Project Structure](#project-structure)
-* [Running Tests](#running-tests)
-* [Configuration](#configuration)
-* [Writing Tests](#writing-tests)
-* [Assertions and Locators](#assertions-and-locators)
-* [Reporting](#reporting)
-* [Tips for VS Code](#tips-for-vs-code)
-
----
-
 ## Prerequisites
 
 * Node.js >= 18
@@ -32,8 +18,8 @@ This project is a **Playwright test automation framework** built with **TypeScri
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/your-repo/playwright-ts-project.git
-cd playwright-ts-project
+git clone https://github.com/a123k/automation-demo.git
+cd PlayWright
 ```
 
 2. Install dependencies:
@@ -49,51 +35,6 @@ yarn install
 ```bash
 npx playwright install
 ```
-
----
-
-## Project Structure
-
-```
-playwright-ts-project/
-## Project Structure
-
-```
-PLAYWRIGHT/
-│
-├─ env/                   # Environment files
-│   ├─ .env.prod
-│   └─ .env.staging
-│
-├─ node_modules/           # Node.js dependencies
-│
-├─ reports/                # Cucumber and test reports
-│   └─ cucumber.json
-│
-├─ src/                    # Source code
-│   ├─ hooks/              # Hooks and custom world for Cucumber
-│   │   ├─ hooks.ts
-│   │   └─ world.ts
-│   │
-│   ├─ pages/              # Page Object Model classes
-│   │   ├─ LoginPage.ts
-│   │   └─ ProductPage.ts
-│   │
-│   └─ test/               # Test files (step definitions or specs)
-│
-├─ test-results/           # Test execution results
-│
-├─ .gitignore
-├─ cucumber.json           # Cucumber configuration
-├─ package-lock.json
-├─ package.json
-├─ README.md
-└─ tsconfig.json           # TypeScript configuration
-```
-
-```
-
----
 
 ## Running Tests
 
@@ -128,7 +69,7 @@ ENV=staging BROWSER=firefox npm run test
 npm run allure:report
 ```
 ```bash
-npm run allure:opne
+npm run allure:open
 ```
 
 ## References
