@@ -28,7 +28,7 @@ BeforeAll(async function () {
   const headless = process.env.HEADLESS !== 'false'; // default true
 
   const engine = getBrowserEngine(browserName);
-  browser = await engine.launch({ headless });
+  browser = await engine.launch({ headless,args: ['--disable-dev-shm-usage'] });
 });
 
 Before(async function (this: CustomWorld, scenario) {

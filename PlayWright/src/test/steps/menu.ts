@@ -1,7 +1,7 @@
-import { Given, Then } from '@cucumber/cucumber';
+import { Given, Then, setDefaultTimeout } from '@cucumber/cucumber';
 import { CustomWorld } from '../../hooks/world';
 import { MenuPage } from '../../pages/MenuPage';
-
+setDefaultTimeout(60000);
 
 Then('I click on the burger menu on the top left corner', async function (this: CustomWorld) {
   const menuPage = new MenuPage(this.page);

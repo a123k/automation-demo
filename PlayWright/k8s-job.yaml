@@ -1,0 +1,77 @@
+apiVersion: batch/v1
+kind: Job
+
+metadata:
+  name: playwright-cucumber-tests
+  labels:
+    app: playwright-automation
+
+spec:
+  backoffLimit: 1
+  ttlSecondsAfterFinished: 3600
+
+  template:
+    metadata:
+      labels:
+        app: playwright-automation
+
+    spec:
+      restartPolicy: Never
+
+      containers:
+        - name: playwright-tests
+          image: playwright-automation-demo:latest
+          imagePullPolicy: IfNotPresent
+
+          command:
+            - sh
+            - -c
+            - |
+              npm test && \
+              allure generate /app/allure-results \
+                --clean \
+                -o /app/allure-report
+
+          env:
+            - name: HEADLESS
+              value: "true"
+
+            - name: CI
+              value: "true"
+
+            - name: ENVIRONMENT
+              value: "staging"
+
+          resources:
+            requests:
+              cpu: "500m"
+              memory: "1Gi"
+            limits:
+              cpu: "1"
+              memory: "2Gi"
+
+          volumeMounts:
+            - name: allure-results
+              mountPath: /app/allure-results
+
+            - name: allure-report
+              mountPath: /app/allure-report
+
+            - name: dshm
+              mountPath: /dev/shm
+
+      volumes:
+        - name: allure-results
+          hostPath:
+            path: /tmp/allure-results
+            type: DirectoryOrCreate
+
+        - name: allure-report
+          hostPath:
+            path: /tmp/allure-report
+            type: DirectoryOrCreate
+
+        - name: dshm
+          emptyDir:
+            medium: Memory
+            sizeLimit: 1Gi

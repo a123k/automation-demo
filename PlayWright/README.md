@@ -71,7 +71,34 @@ npm run allure:report
 ```bash
 npm run allure:open
 ```
-
+## Creating docker image and running the image in k8s
+## Prerequisites
+Docker Desktop installed and running
+Minikube installed
+kubectl installed 
+## Steps
+```bash
+cd ./automation-demo/PlayWright
+minikube start
+eval $(minikube docker-env)
+docker build -t playwright-automation-demo:latest .
+kubectl apply -f k8s-job.yaml
+kubectl get jobs
+kubectl get pods
+kubectl logs -f job/playwright-cucumber-tests
+kubectl get jobs playwright-cucumber-tests -o wide
+```
+## To check report
+```bash
+minikube ssh
+cd /tmp/allure-report
+python3 -m http.server 8080
+```
+Leave that running and open another terminal
+```bash
+minikube ip
+```
+Open http://<minikude ip>.2:8080 eg http://192.168.49.2:8080
 ## References
 
 * [Playwright Docs](https://playwright.dev/)
