@@ -73,9 +73,9 @@ npm run allure:open
 ```
 ## Creating docker image and running the image in k8s
 ## Prerequisites
-Docker Desktop installed and running
-Minikube installed
-kubectl installed 
+* Docker Desktop installed and running
+* Minikube installed
+* kubectl installed 
 ## Steps
 ```bash
 cd ./automation-demo/PlayWright
