@@ -63,7 +63,7 @@ ENV=staging BROWSER=firefox npm run test
 
 ## Reporting
 
-* Allure report:
+Allure report:
 
 ```bash
 npm run allure:report
