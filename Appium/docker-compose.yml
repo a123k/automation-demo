@@ -1,0 +1,30 @@
+services:
+  # Android Emulator + Appium Server
+  # Note: Requires KVM support on the host
+  android-device:
+    image: budtmo/docker-android:emulator_11.0
+    privileged: true
+    ports:
+      - "4723:4723"  # Appium
+      - "6080:6080"  # NoVNC (to see the screen in browser)
+    devices:
+      - "/dev/kvm:/dev/kvm"
+    volumes:
+      - .:/app
+    environment:
+      - DEVICE=Samsung Galaxy S10
+      - APPIUM=true
+      - MOBILE_WEB_TEST=false
+
+  # Python Test Runner
+  test-runner:
+    build: .
+    depends_on:
+      - android-device
+    volumes:
+      - .:/app
+    environment:
+      - APPIUM_HOST=android-device
+    # Command to wait for Appium to be ready and generate an HTML report
+    command: >
+      bash -c "sleep 60 && pytest tests/ -v --tb=short --html=reports/report.html --self-contained-html"

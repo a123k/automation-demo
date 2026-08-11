@@ -1,0 +1,7 @@
+{
+  "app_path": "/app/Android-MyDemoAppRN.1.3.0.build-244.apk",
+  "appium_server_url": "http://android-device:4723",
+  "device_name": "Samsung Galaxy S10",
+  "platform_name": "Android",
+  "automation_name": "UiAutomator2"
+}
