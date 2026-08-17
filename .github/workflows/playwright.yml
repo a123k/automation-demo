@@ -20,6 +20,9 @@ defaults:
   run:
     working-directory: PlayWright
 
+permissions:
+  contents: write
+
 jobs:
   test:
     timeout-minutes: 30
@@ -52,7 +55,7 @@ jobs:
         if: always()
         run: npm run allure:report
 
-      - name: Upload Allure report
+      - name: Upload Allure report as artifact
         if: always()
         uses: actions/upload-artifact@v4
         with:
@@ -70,3 +73,11 @@ jobs:
             PlayWright/videos
             PlayWright/traces
           retention-days: 14
+
+      - name: Publish Allure report to GitHub Pages
+        if: always() && github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: PlayWright/allure-report
+          publish_branch: gh-pages
